@@ -46,6 +46,19 @@ header li{
     .hamburger-toggle {
         display: block;
     }
+
+    footer .col-sm-4 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+    }
+    footer .col-sm-3 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+    }
 }
 
 footer {
@@ -74,6 +87,7 @@ footer .fa-brands:hover {
 
 footer .fa-stack {
     display: inline-block;
+    margin-left: 3px;
     transition: transform 0.3s;
 }
 
@@ -90,13 +104,19 @@ footer .fa-stack i {
     vertical-align: middle;
 }
 
+@media (min-width: 576px) {
+    footer .nav {
+        justify-content: end;
+    }
+}
+
 #page-top {
     display: none;
     position: fixed;
     width: 4em;
     height: 4em;
-    bottom: .4em;
-    right: .4em;
+    bottom: 1.5em;
+    right: .1em;
     z-index: 999;
     transition: transform 0.3s;
 }
