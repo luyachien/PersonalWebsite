@@ -75,6 +75,16 @@ footer .contact-list-item a {
     color: #7D6342; /* 繼承父元素的文字顏色 */
 }
 
+footer .logo-link {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+footer .logo-link:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+}
+
 footer .contact-list-item a i {
     display: inline-block;
     transition: transform 0.3s;
