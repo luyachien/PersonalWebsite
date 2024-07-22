@@ -47,6 +47,9 @@ header li{
 }
 
 @media (max-width: 575.9px) {
+    #intro {
+        height: 93vh;
+    }
     .hamburger-toggle {
         display: block;
     }
