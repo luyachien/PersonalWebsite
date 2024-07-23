@@ -1,5 +1,5 @@
-#intro {
-    height: 89vh;
+header {
+    height: 100vh;
     margin-bottom: 0px;
     position: relative;
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0.99) 10%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0) 95%),url("../images/bannerBG-4.png");
@@ -8,7 +8,6 @@
     background-size: cover;
     padding: 0 0;
     margin-bottom: 2rem;
-    border-radius: .5rem;
 }
 
 header li{
@@ -16,7 +15,32 @@ header li{
 }
 
 .navbar {
-    width: 100%;
+    width: calc(100% - 4rem);
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 2rem;
+    z-index: 20;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    padding-top: 1.5rem;
+}
+
+@media screen and (min-width: 992px) and (hover: hover) and (pointer: fine) {
+    .navbar {
+        opacity: 0;
+    }
+
+    header:hover .navbar {
+        opacity: 1;
+    }
+}
+
+header .container-fluid {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    padding: .5rem 2rem;
 }
 
 .hamburger-toggle {
@@ -46,15 +70,20 @@ header li{
     transform: rotate(-45deg) translate(5.5px, -6px);
 }
 
-@media (max-width: 575.9px) {
-    #intro {
-        height: 93vh;
+@media (max-width: 991.9px) {
+    .navbar {
+        opacity: 1;
     }
+}
+
+@media (max-width: 767.9px) {
     .hamburger-toggle {
         display: block;
     }
+}
 
-    footer .col-sm-4 {
+@media (max-width: 575.9px) {
+    footer .col-sm-6 {
         display: flex;
         justify-content: center;
         flex-direction: row;
@@ -132,12 +161,12 @@ footer .fa-stack i {
     position: fixed;
     width: 4em;
     height: 4em;
-    bottom: 1.5em;
+    bottom: 2.5em;
     right: .1em;
     z-index: 999;
     transition: bottom 0.3s;
 }
 
 #page-top:hover {
-    bottom: 2em;
+    bottom: 3em;
 }
