@@ -24,7 +24,6 @@ header li{
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     padding-top: 1.5rem;
-    flex-wrap: nowrap;
 }
 
 @media screen and (min-width: 768px) and (hover: hover) and (pointer: fine) {
@@ -89,13 +88,17 @@ header .container-fluid {
         width: 100%;
         left: 0;
         padding-top: 0;
-        display: flex;
-        flex-wrap: nowrap;
     }
     header .container-fluid {
         padding: .5rem 1rem;
         border-radius: 0rem;
     }
+    .hamburger-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 575.9px) {
     .navbar-brand img {
         width: 25px;
         height: 25px;
@@ -112,26 +115,16 @@ header .container-fluid {
         width: 20px;
         height: 2px;
     }
-    .hamburger-toggle {
-        display: block;
+    .hamburger-toggle.open .bar-1 {
+        transform: rotate(45deg) translate(5px, 4px);
     }
-}
-
-@media (max-width: 991px) {
-    .navbar-brand img {
-        width: 30px;
-        height: 30px;
+    .hamburger-toggle.open .bar-2 {
+        opacity: 0;
     }
-    .navbar-brand {
-        font-size: 1.2rem;
+    .hamburger-toggle.open .bar-3 {
+        transform: rotate(-45deg) translate(5.5px, -5px);
     }
-    .navbar-nav .nav-link {
-        font-size: 0.9rem;
-        padding: 0.5rem 0.7rem;
-    }
-}
-
-@media (max-width: 575.9px) {
+    
     footer .col-sm-6 {
         display: flex;
         justify-content: center;
