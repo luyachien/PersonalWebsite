@@ -11,6 +11,33 @@ document.getElementById('hamburgerToggle').addEventListener('click', function() 
     }
 });
 
+/*Show navbar after hovering jumbotron*/
+document.addEventListener("DOMContentLoaded", function() {
+    var jumbotron = document.querySelector(".jumbotron");
+    var navbar = document.querySelector(".navbar");
+
+    jumbotron.addEventListener("mouseenter", function() {
+        navbar.style.opacity = "1";
+    });
+
+    jumbotron.addEventListener("mouseleave", function() {
+        if (!navbar.classList.contains("hovered")) {
+            navbar.style.opacity = "";
+        }
+    });
+
+    navbar.addEventListener("mouseenter", function() {
+        navbar.classList.add("hovered");
+        navbar.style.opacity = "1";
+    });
+
+    navbar.addEventListener("mouseleave", function() {
+        navbar.classList.remove("hovered");
+        if (!jumbotron.matches(":hover")) {
+            navbar.style.opacity = "";
+        }
+    });
+});
 
 /*GoBackToTop*/
 // 取得回到頂部按鈕元素
