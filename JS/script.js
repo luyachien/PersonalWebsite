@@ -1,3 +1,13 @@
+/*LoadingPage*/
+document.addEventListener('DOMContentLoaded', function() {
+    document.documentElement.classList.add('isLoad');
+
+    setTimeout(function() {
+        document.querySelector('.navbar').classList.add('show');
+    }, 2000);
+});
+
+
 /*HamburgerToggle*/
 document.getElementById('hamburgerToggle').addEventListener('click', function() {
     this.classList.toggle('open');
