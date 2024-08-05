@@ -89,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
 /*GoBackToTop*/
 // 取得回到頂部按鈕元素
 var backToTopButton = document.getElementById('page-top');
