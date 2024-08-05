@@ -13,7 +13,7 @@
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Radley&display=swap" rel="stylesheet">
 
     <!--icon(Font Awesome)-->
     <script src="https://kit.fontawesome.com/2acf1aa049.js" crossorigin="anonymous"></script>
@@ -63,14 +63,68 @@
             </nav>
         </div>
     </header>
+    <main>
+        <!--Banner-->
+        <section id="intro">
+            <div class="banner">
+                <img class="banner-title" src="images/BannerTitle-2.png" alt="BannerTitle">
+                <a class="GoToSecond" href="#second">
+                    <i class="fa-solid fa-angles-down fa-inverse"></i>
+                </a>
+            </div>
+        </section>
+
+        <!--About-->
+        <section id="second">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="About-Headshot col-sm-5 me-0 me-md-2">
+                        <img src="images/AboutHeadshot.png" alt="Headshot">
+                    </div>
+                    <div class="About-Text-wrap col-sm-6">
+                        <div class="row">
+                            <div class="About-Text col-12">
+                                <div class="AboutTitle">
+                                    <h1>
+                                        <span class="Name-zh">簡映瑜</span>
+                                        <span class="Name-en">|&nbsp;Chien, Ying-Yu</span>
+                                    </h1>
+                                </div>
+                                <div class="About-zh">
+                                    <p>我是就讀電腦科學與人工智慧學系的學生，</p>
+                                    <p>是位好奇心強烈、細心及不怕挫折的女孩。</p>
+                                    <p>渴望加入能讓彼此互相成長及學習的團隊。</p>
+                                </div>
+                                <div class="About-en">
+                                    <p>I am a student in the Department of Computer Science and </p>
+                                    <p>Artificial Intelligence (CSAI), a curious, meticulous, and resilient girl.</p>
+                                    <p>Eager to join a team where we can grow and learn from each other.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-sm-10">
+                                <div class="AboutBtn my-2 mx-2 d-flex align-items-center justify-content-center">
+                                    <a href="/" class="btn" data-text="Read&nbsp;More&nbsp;↗">
+                                        <span>R</span>
+                                        <span>e</span>
+                                        <span>a</span>
+                                        <span>d</span>
+                                        <span>&nbsp;</span>
+                                        <span>M</span>
+                                        <span>o</span>
+                                        <span>r</span>
+                                        <span>e</span>
+                                        <span>&nbsp;</span>
+                                        <span>↗</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     
-    <!--Banner-->
-    <section id="intro">
-        <div class="jumbotron">
-            <img class="jumbotron-title" src="images/BannerTitle-2.png" alt="BannerTitle">
-            <i class="fa-solid fa-angles-down fa-inverse"></i>
-        </div>
-    </section>
 
     <!--footer-->
     <div class="container">
@@ -82,7 +136,7 @@
                     </a>
                 </div>
                 
-                <div class="col-sm-6 d-flex align-items-center justify-content-center my-1 my-sm-0 me-sm-auto order-3 order-sm-2">
+                <div class="footer-text col-sm-6 d-flex align-items-center justify-content-center my-1 my-sm-0 me-sm-auto order-3 order-sm-2">
                     <small>Copyright &copy; 2024 Ying-Yu, Chien. All Rights Reserved.</small>
                 </div>
                 
@@ -92,7 +146,7 @@
                             <i class="fa-brands fa-github fa-2x"></i>                            
                         </a>
                         <a href="mailto: luya.chien@gmail" target="_blank" rel="noopener noreferrer">
-                            <span class="fa-stack" style="vertical-align: top;">
+                            <span class="fa-stack">
                                 <i class="fa-solid fa-circle fa-stack-2x"></i>
                                 <i class="fa-regular fa-envelope fa-stack-1x fa-inverse"></i>
                             </span>                            
@@ -106,7 +160,11 @@
 
     <p id="page-top">
         <a href="#top">
-            <i class="fa-solid fa-circle-chevron-up fa-2x" style="color: #7D6342; font-size: 2.5em;"></i>
+            <span class="fa-stack">
+                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-angle-up fa-stack-1x"></i>
+            </span>  
+            
         </a>
     </p>
 
