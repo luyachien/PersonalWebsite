@@ -5,6 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
         document.querySelector('.navbar').classList.add('show');
     }, 2000);
+
+    setTimeout(function() {
+        document.querySelector('.GoToSecond').classList.add('show');
+    }, 3000);
 });
 
 
@@ -21,16 +25,16 @@ document.getElementById('hamburgerToggle').addEventListener('click', function() 
     }
 });
 
-/*Show navbar after hovering jumbotron*/
+/*Show navbar after hovering banner*/
 document.addEventListener("DOMContentLoaded", function() {
-    var jumbotron = document.querySelector(".jumbotron");
+    var banner = document.querySelector(".banner");
     var navbar = document.querySelector(".navbar");
 
-    jumbotron.addEventListener("mouseenter", function() {
+    banner.addEventListener("mouseenter", function() {
         navbar.style.opacity = "1";
     });
 
-    jumbotron.addEventListener("mouseleave", function() {
+    banner.addEventListener("mouseleave", function() {
         if (!navbar.classList.contains("hovered")) {
             navbar.style.opacity = "";
         }
@@ -43,21 +47,58 @@ document.addEventListener("DOMContentLoaded", function() {
 
     navbar.addEventListener("mouseleave", function() {
         navbar.classList.remove("hovered");
-        if (!jumbotron.matches(":hover")) {
+        if (!banner.matches(":hover")) {
             navbar.style.opacity = "";
         }
     });
 });
 
+/*å¾€ä¸‹æ»‘20pxæ™‚ï¼Œå°Žè¦½åˆ—é€æ˜Žåº¦ç‚º1(é¡¯ç¾)*/
+document.addEventListener('DOMContentLoaded', function() {
+    // Loading page transition
+    document.documentElement.classList.add('isLoad');
+
+    setTimeout(function() {
+        document.querySelector('.navbar').classList.add('show');
+    }, 2000);
+
+    // Handle navbar visibility on scroll
+    const navbar = document.querySelector('.navbar');
+    const banner = document.querySelector('.banner');
+    let hoverTimer;
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 20) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    // Handle mouse hover on banner
+    banner.addEventListener('mouseenter', function() {
+        hoverTimer = setTimeout(function() {
+            navbar.style.opacity = '0';
+        }, 3000); // 3000 milliseconds = 3 seconds
+    });
+
+    // Handle mouse leave from banner
+    banner.addEventListener('mouseleave', function() {
+        clearTimeout(hoverTimer);
+        navbar.style.opacity = ''; // Reset the opacity
+    });
+});
+
+
 /*GoBackToTop*/
-// ¨ú±o¦^¨ì³»³¡«ö¶s¤¸¯À
+// å–å¾—å›žåˆ°é ‚éƒ¨æŒ‰éˆ•å…ƒç´ 
 var backToTopButton = document.getElementById('page-top');
 
-// ºÊÅ¥­¶­±ºu°Ê¨Æ¥ó
+// ç›£è½é é¢æ»¾å‹•äº‹ä»¶
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    // ¦pªG­¶­±ºu°Ê¶W¹L 20px¡A«hÅã¥Ü¦^¨ì³»³¡«ö¶s
+    // å¦‚æžœé é¢æ»¾å‹•è¶…éŽ 20pxï¼Œå‰‡é¡¯ç¤ºå›žåˆ°é ‚éƒ¨æŒ‰éˆ•
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         backToTopButton.style.display = "block";
     } else {
