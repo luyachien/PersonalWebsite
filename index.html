@@ -7,17 +7,21 @@
 
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="CSS/style.css">
 
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Radley&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="CSS/style.css">
+
     <!--icon(Font Awesome)-->
     <script src="https://kit.fontawesome.com/2acf1aa049.js" crossorigin="anonymous"></script>
     
+    <script type="text/javascript">
+        let submitted = false;
+    </script>
+
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Personal Website</title>
 </head>
@@ -63,6 +67,7 @@
             </nav>
         </div>
     </header>
+
     <main>
         <!--Banner-->
         <section id="intro">
@@ -120,6 +125,68 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="third">
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='thanks';}"></iframe>
+            <div class="contact-wrap">
+                <div class="contact">
+                    <div class="contact-box">
+                        <div class="txt">
+                            <div class="txt-zh">
+                                <p>若有想聯絡的事項，歡迎填寫以下資訊後，點選「Submit」按鈕送出聯絡表單，謝謝。</p>
+                            </div>
+                            <div class="txt-en">
+                                <p>If you have any inquiries, please fill out the information below and click the "Submit" button to send the contact form.</p>
+                                <p>Thank you.</p>
+                            </div>
+                        </div>
+                        <div class="form-wrap">
+                            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScANU0UGT5Kmd2wQ0Wxt7ITrBuv1VOOr3yk7hrpPeKhhuGYCA/formResponse" class="c-form" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+                                <div class="row">
+                                    <div class="col-sm-6 c-form_item">
+                                        <label for="field-name" class="c-form_label">
+                                            <span class="c-form_required">Required</span>
+                                            <span class="text">Name</span>
+                                        </label>
+                                        <input name="entry.806929725" type="text" class="c-form_input" id="field-name" required="required" placeholder="請務必填寫您的姓名。">
+                                    </div>
+                                
+                                    <div class="col-sm-6 c-form_item">
+                                        <label for="field-mail" class="c-form_label">
+                                            <span class="c-form_required">Required</span>
+                                            <span class="text">Email Address</span>
+                                        </label>
+                                        <input name="entry.1926057037" type="text" class="c-form_input" id="field-mail" placeholder="sample@gmail.com">
+                                    </div>
+                                
+                                    <div class="col-sm-12 c-form_item">
+                                        <label for="field-message" class="c-form_label">
+                                            <span class="c-form_required">Required</span>
+                                            <span class="text">Content of Inquiry</span>
+                                        </label>
+                                        <input name="entry.363794694" type="text" class="c-form_input" id="field-message" placeholder="請務必填寫您想詢問的內容。">
+                                    </div>
+                            
+                                    <div class="col-sm-12 c-form_item">
+                                        <label for="field-other" class="c-form_label">
+                                            <span class="c-form_non-required">Optional</span>
+                                            <span class="text">Remarks</span>
+                                        </label>
+                                        <input name="entry.1282292902" type="text" class="c-form_input" id="field-other" placeholder="請填寫您想備註的其他資訊。">
+                                    </div>
+                            
+                                    <div class="col-sm-12 c-form_submit">
+                                        <button type="submit">Sumbit</button>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
