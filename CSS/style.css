@@ -655,6 +655,157 @@ header .container-fluid {
     }
 }
 
+/*form*/
+.contact-wrap {
+    padding-top: 100px;
+    position: relative;
+    z-index: 8;
+}
+.contact {
+    width: 100%;
+    max-width: 900px; /* 最大寬度 */
+    margin: 0 auto; /* 居中對齊 */
+    padding: 20px;
+    position: relative; /* 使 .contact 的定位基於 .contact-wrap */
+}
+.contact:before {
+    position: absolute;
+    content: "Contact";
+    text-align: center;
+    width: 100%;
+    top: -25px; /* 根據需求調整位置 */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px; /* 調整字體大小 */
+    font-weight: bold; /* 調整字體粗細 */
+    color: #8A663F; /* 調整字體顏色 */
+    z-index: 10; /* 確保文字顯示在圓形背景上方 */
+}
+.contact:after {
+    position: absolute;
+    content: "";
+    background: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    height: 190px;
+    top: -50px; /* 調整頂部距離 */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0; /* 使圓形背景在 .contact 的後面 */
+}
+.contact-box {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+.contact-box:before {
+    position: absolute;
+    content: "";
+    background: #FFFFFF;
+    width: 209.5px;
+    height: 8px;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.contact .txt {
+    position: relative;
+    text-align: center;
+    z-index: 10;
+}
+.contact .txt .txt-zh{
+    color: #8A663F;
+}
+.contact .txt .txt-zh p {
+    margin-bottom: 12px;
+}
+.contact .txt .txt-en{
+    color: #B2A89C;
+    font-size: 14px;
+}
+.contact .txt .txt-en p {
+    margin-bottom: 4px;
+}
+.form-wrap {
+    margin-top: 20px;
+}
+.c-form_item {
+    margin-bottom: 20px;
+}
+.c-form_item .text {
+    color: #8A663F;
+}
+.c-form_label {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+}
+.c-form_required {
+    display: inline-block;
+    background: #AD9378;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    width: 75px;
+    font-size: 14px;
+    font-weight: normal;
+}
+.c-form_non-required {
+    display: inline-block;
+    background: #FFFFFF;
+    color: #AD9378;
+    border: 2px solid #AD9378;
+    padding: 3px 8px;
+    margin-right: 10px;
+    border-radius: 20px;
+    width: 75px;
+    font-size: 14px;
+    font-weight: normal;
+}
+.c-form_input {
+    width: 100%;
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1.2px solid #8A663F;
+}   
+.c-form_input[type="text"] {
+    height: 40px;
+    color: #8A663F;
+}
+.c-form_input:focus {
+    outline: solid #8A663F;
+}
+.form-wrap input::placeholder {
+    color: #DACDC3;
+}
+.c-form_submit {
+    text-align: center;
+}
+.c-form_submit button {
+    background-color: #FFFFFF;
+    color: #8A663F;
+    border: 2px solid #8A663F;
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.c-form_submit button:hover {
+    background-color: #8A663F;
+    color: #FFFFFF;
+}
+
 /*Footer*/
 footer {
     display: block;
