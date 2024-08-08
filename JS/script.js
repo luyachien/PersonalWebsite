@@ -97,8 +97,8 @@ var backToTopButton = document.getElementById('page-top');
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    // 如果頁面滾動超過 20px，則顯示回到頂部按鈕
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    // 如果頁面滾動超過 100px，則顯示回到頂部按鈕
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         backToTopButton.style.display = "block";
     } else {
         backToTopButton.style.display = "none";
