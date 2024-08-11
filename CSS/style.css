@@ -101,9 +101,10 @@ header .container-fluid {
     display: flex;
 }
 .navbar-title {
-    font-family: "Radley", serif;
+    font-family: "Calistoga", serif;
     font-weight: 400;
     font-style: normal;
+    letter-spacing: 2px;
     color: #7D6342;
     font-size: larger;
 }
@@ -132,9 +133,10 @@ header .container-fluid {
 }
 /*NavItem*/
 .nav-item {
-    font-family: "Radley", serif;
+    font-family: "Calistoga", serif;
     font-weight: 400;
     font-style: normal;
+    letter-spacing: 2px;
     font-size: 1.1rem;
 }
 
@@ -224,6 +226,9 @@ header .container-fluid {
         justify-content: center;
         flex-direction: row;
         width: 100%;
+    }
+    footer a .fa-stack {
+        margin-right: 0;
     }
 }
 @media (max-width: 450.9px) {
@@ -413,8 +418,7 @@ header .container-fluid {
     min-width: 100px;
     background: #7D6342 !important;
     color: #FFFBF5 !important;
-    font-family: "Noto Sans TC", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align: center;
@@ -677,7 +681,10 @@ header .container-fluid {
     left: 50%;
     transform: translateX(-50%);
     font-size: 24px; /* 調整字體大小 */
-    font-weight: bold; /* 調整字體粗細 */
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
     color: #8A663F; /* 調整字體顏色 */
     z-index: 10; /* 確保文字顯示在圓形背景上方 */
 }
@@ -721,15 +728,31 @@ header .container-fluid {
     text-align: center;
     z-index: 10;
 }
-.contact .txt .txt-zh{
+.contact .txt .txt-zh {
     color: #8A663F;
+    font-size: 14px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+}
+.contact .txt .txt-zh .txt-zh_submit {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
 }
 .contact .txt .txt-zh p {
     margin-bottom: 12px;
 }
-.contact .txt .txt-en{
+.contact .txt .txt-en {
     color: #B2A89C;
-    font-size: 14px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1.2px;
 }
 .contact .txt .txt-en p {
     margin-bottom: 4px;
@@ -742,21 +765,27 @@ header .container-fluid {
 }
 .c-form_item .text {
     color: #8A663F;
+    font-size: 14px;
+    letter-spacing: 2px;
 }
 .c-form_label {
     display: flex;
     margin-bottom: 5px;
     align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1.8px;
 }
 .c-form_required {
     display: inline-block;
     background: #AD9378;
     color: #FFFFFF;
-    padding: 5px 10px;
+    padding: 3px 7.2px;
     margin-right: 10px;
     border-radius: 20px;
     width: 75px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: normal;
 }
 .c-form_non-required {
@@ -764,11 +793,11 @@ header .container-fluid {
     background: #FFFFFF;
     color: #AD9378;
     border: 2px solid #AD9378;
-    padding: 3px 8px;
+    padding: 3px 6.5px;
     margin-right: 10px;
     border-radius: 20px;
     width: 75px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: normal;
 }
 .c-form_input {
@@ -778,9 +807,28 @@ header .container-fluid {
     border-left: none;
     border-right: none;
     border-bottom: 1.2px solid #8A663F;
-}   
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
 .c-form_input[type="text"] {
     height: 40px;
+    color: #8A663F;
+}
+.c-form_input[type="email"] {
+    height: 40px;
+    color: #8A663F;
+}
+.c-form_input[type="textarea"] {
+    height: 42px;
+    color: #8A663F;
+    resize:none;
+}
+.c-form_input[type="textarea"]:focus {
+    height: 60px;
     color: #8A663F;
 }
 .c-form_input:focus {
@@ -788,11 +836,35 @@ header .container-fluid {
 }
 .form-wrap input::placeholder {
     color: #DACDC3;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 3px;
+}
+.form-wrap textarea::placeholder {
+    color: #DACDC3;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 3px;
+}
+.form-wrap #field-mail::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 2px;
 }
 .c-form_submit {
     text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .c-form_submit button {
+    letter-spacing: 2px;
+    font-size: 15px;
     background-color: #FFFFFF;
     color: #8A663F;
     border: 2px solid #8A663F;
@@ -827,7 +899,12 @@ footer .logo-link:hover {
     transform-origin: center;
 }
 footer .footer-text {
-    color: #7D6342;
+    color: #B2A89C;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1.2px;
 }
 footer .contact-list-item a i {
     display: inline-block;
@@ -839,6 +916,7 @@ footer .fa-brands:hover {
 }
 footer .fa-stack {
     margin-left: 3px;
+    margin-right: 5px;
     transition: transform 0.3s;
     vertical-align: top;
 }
