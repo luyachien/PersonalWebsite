@@ -132,6 +132,8 @@
 #second {
     color: #7D6342;
     cursor: default;
+    margin-top: 50px;
+    scroll-margin-top: 120px;
 }
 .About-Headshot {
     display: flex;
@@ -325,6 +327,11 @@
         width: 60%;
     }
 }
+@media (max-width: 768px) {
+    #second {
+        scroll-margin-top: 75px;
+    }
+}
 @media screen and (max-width: 676.9px) and (hover: hover) and (pointer: fine) {
     main {
         position: relative;
@@ -332,10 +339,6 @@
     }
     .banner {
         height: 90.5vh;
-    }
-
-    #second {
-        scroll-margin-top: 75px;
     }
 }
 @media (max-width: 676.9px) {
@@ -440,6 +443,197 @@
     }
 }
 
-#third .contact-wrap {
-    display: block;
+/*Projects*/
+#third {
+    margin: 80px 0;
+}
+.section-title {
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    color: #b8a590;
+}
+@media (min-width: 992px) {
+    #third .container-md {
+        max-width: 720px;
+    }
+}
+@media (max-width: 640.9px) {
+    #third .container-md {
+        max-width: 460px;
+    }
+}
+#third .col-6 {
+    margin-bottom: 16px;
+}
+.card {
+    min-width: 350px;
+}
+@media (max-width: 730px) {
+    #third .col-6 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    #third .card {
+        max-width: 430px;
+        min-width: auto;
+    }
+}
+.card-img {
+    width: 100%;
+    overflow: hidden;
+}
+.card-img img {
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+}
+.card-img img:hover {
+    overflow: clip;
+    transform: scale(1.1);
+}
+.card-title {
+    color: #8a663f;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: .8px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.card-subtitle {
+    color: #ad9378;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .8px;
+    font-size: .85rem;
+}
+.subtitle-tag {
+    color: #fffbf5;
+    background-color: #ad9378;
+    margin-left: 8px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .8px;
+    font-size: .8rem;
+}
+.card-body .card-text {
+    color: #8a663f;
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+    font-size: .9rem;
+    line-height: 2;
+    padding-left: 1rem;
+    margin-bottom: 8px;
+}
+.card-tag {
+    margin-bottom: 8px;
+}
+.rounded-pill {
+    color: #ad9378;
+    background-color: #ffffff;
+    border: 1.5px #ad9378 solid;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .8px;
+    font-size: .8rem;
+}
+.card-link {
+    color: #ad9378;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .8px;
+    font-size: 1rem;
+}
+.card-link:hover {
+    text-decoration: none;
+}
+.projects-link {
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    color: #7D6342;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+.projects-link:hover {
+    color: #b8a590;
+}
+.projects-link span {
+    padding-left: 10px;
+    animation: MoveToRight 1.2s ease infinite;
+}
+@keyframes MoveToRight {
+    0% {
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/*contact*/
+#fourth {
+    margin-bottom: 50px;
+}
+.mail-title {
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    color: #8a663f;
+}
+.f-mail {
+    text-decoration: none;
+}
+.mail {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    color: #8a663f;
+    font-size: 14px;
+}
+.mail::before {
+    content: "◊";
+    position: relative;
+    margin-right: 2px;
+    font-size: 16px;
+    opacity: 0;
+}
+.mail::after {
+    content: "♦";
+    position: relative;
+    margin-left: 2px;
+    font-size: 16px;
+    opacity: 0;
+}
+.mail:hover::before,
+.mail:hover::after {
+    opacity: 1;
+}
+.c-btn img {
+    transition: filter 0.2s ease-in-out, transform 0.3s ease-in-out;
+}
+.c-btn:hover img {
+    filter: opacity(0.5);
+    transform: translateY(-5px);
 }

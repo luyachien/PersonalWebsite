@@ -15,6 +15,7 @@
     
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/i-style.css">
+    <link rel="stylesheet" href="CSS/r-style.css">
 
     <!--icon(Font Awesome)-->
     <script src="https://kit.fontawesome.com/2acf1aa049.js" crossorigin="anonymous"></script>
@@ -24,7 +25,7 @@
     </script>
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <title>Ying-Yu, Chien&ensp;|&ensp;簡映瑜</title>
+    <title>RESUME&ensp;-&ensp;Ying-Yu, Chien&ensp;|&ensp;簡映瑜</title>
 </head>
 <body oncontextmenu = "return false">
     <!--Loading Page-->
@@ -51,10 +52,10 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="resume.html">Resume</a>
+                                <a class="nav-link active" aria-current="page" href="resume.html">Resume</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Projects</a>
@@ -70,16 +71,6 @@
     </header>
 
     <main>
-        <!--Banner-->
-        <section id="intro">
-            <div class="banner">
-                <img class="banner-title" src="images/BannerTitle-2.png" alt="BannerTitle">
-                <a class="GoToSecond" href="#second">
-                    <i class="fa-solid fa-angles-down fa-inverse"></i>
-                </a>
-            </div>
-        </section>
-
         <!--About-->
         <section id="second">
             <div class="container-xl">
@@ -107,21 +98,29 @@
                                     <p>Eager to join a team where we can grow and learn from each other.</p>
                                 </div>
                             </div>
-                            <div class="col-lg-9 col-sm-10">
-                                <div class="AboutBtn my-2 mx-2 d-flex align-items-center justify-content-center">
-                                    <a href="resume.html" class="btn" data-text="Read&nbsp;More&nbsp;↗">
-                                        <span>R</span>
-                                        <span>e</span>
-                                        <span>a</span>
-                                        <span>d</span>
-                                        <span>&nbsp;</span>
-                                        <span>M</span>
-                                        <span>o</span>
-                                        <span>r</span>
-                                        <span>e</span>
-                                        <span>&nbsp;</span>
-                                        <span>↗</span>
-                                    </a>
+                            <div class="About-sns col-12">
+                                <div class="row">
+                                    <div class="col-6 d-flex align-items-center">
+                                        <a href="mailto: luya.chien@gmail" target="_blank" rel="noopener noreferrer">
+                                            <span class="fa-stack">
+                                                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                <i class="fa-regular fa-envelope fa-stack-1x fa-inverse"></i>
+                                            </span>    
+                                            <span class="sns-mail">
+                                                luya.chien@gmail.com
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center">
+                                        <a href="https://github.com/luyachien" target="_blank" rel="noopener noreferrer">
+                                            <span>
+                                                <i class="fa-brands fa-github"></i> 
+                                            </span>  
+                                            <span class="sns-github">
+                                                luyachien
+                                            </span>                         
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -130,16 +129,103 @@
             </div>
         </section>
 
-        <!--Projects-->
-        <section id="third">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex align-items-center justify-content-center mb-3">
-                        <h1 class="section-title">Projects</h1>
+        <!--Education-->
+        <section id="education">
+            <div class="container-md">
+                <h4 class="resume-title">▪&ensp;EDUCATION</h4>
+                <div class="E-wrap">
+                    <div class="row row-cols-3">
+                        <span class="col-4 E-time">Sep 2022 - Present</span>
+                        <span class="col-8 E-school-zh">
+                            <span class="row">
+                                <span class="col-4">國立屏東大學</span>
+                                <span class="col-7">電腦科學與人工智慧學系</span>
+                            </span>
+                        </span>
+                        <span class="col-4 E-degree">/&ensp;學士&ensp;(Bachelor's Degree)&ensp;/</span>
+                        <span class="col-8 E-school-en">
+                            <span class="row row-cols-1">
+                                <span class="col">National Pingtung University, </span>
+                                <span class="col">Department of Computer Science and Artificial Intelligence</span>
+                            </span>
+                        </span>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!--Skills-->
+        <section id="skills">
             <div class="container-md">
+                <h4 class="resume-title">▪&ensp;SKILLS</h4>
+                <div class="S-wrap">
+                    <div class="row row-cols-3">
+                        <div class="col-12 d-flex justify-content-center">
+                            <div class="S-box-border mb-3 row justify-content-center px-0">
+                                <p class="S-title-border col-2" title="前端">Frontend</p>
+                                <p class="S-text col-11 px-0 text-center">HTML5&ensp;/&ensp;CSS3&ensp;/&ensp;JavaScript&ensp;/&ensp;ASP.NET&ensp;/&ensp;Bootstrap 5&ensp;/&ensp;RWD 響應式網頁設計</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="S-box-bg mb-3">
+                                <p class="S-title-bg" title="後端">Backend</p>
+                                <p class="S-text">T-SQL</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="S-box-border mb-3">
+                                <p class="S-title-border S-PL" title="程式語言">Programming Languages</p>
+                                <p class="S-text">C&ensp;/&ensp;Python</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="S-box-bg mb-3">
+                                <p class="S-title-bg" title="機器學習">Machine Learning</p>
+                                <p class="S-text">YOLOv5&ensp;/&ensp;Roboflow</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="S-box-border mb-3">
+                                <p class="S-title-border" title="硬體設計">Hardware design</p>
+                                <p class="S-text">Verilog&ensp;/&ensp;Arduino</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="S-box-bg mb-3">
+                                <p class="S-title-bg" title="版本管控">Version Control</p>
+                                <p class="S-text">Git&ensp;/&ensp;GitHub</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="S-box-border mb-3">
+                                <p class="S-title-border" title="生產力工具">Productivity Tools</p>
+                                <p class="S-text">Notion&ensp;/&ensp;Canva</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Languages-->
+        <section id="languages">
+            <div class="container-md">
+                <h4 class="resume-title">▪&ensp;LANGUAGES</h4>
+                <div class="L-wrap d-flex align-items-center">
+                    <ul class="align-items-center">
+                        <li title="台灣華語">Taiwanese Mandarin<span title="母語">&ensp;(Native)</span></li>
+                        <li title="台灣閩南語">Taiwanese Hokkien<span title="流利">&ensp;(Fluent)</span></li>
+                        <li>English<span title="可日常對話">&ensp;(Conversational)</span></li>
+                        <li>Japanese<span title="初學者">&ensp;(Beginner)</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--Projects-->
+        <section id="projects">
+            <div class="container-md">
+                <h4 class="resume-title">▪&ensp;PROJECTS</h4>
                 <div class="row">
                     <div class="col-6 h-100 d-flex align-items-center justify-content-center px-1">
                         <div class="card">
@@ -160,10 +246,10 @@
                                     <li>使用 Canva 設計 Logo 及網頁框架。</li>
                                 </ul>
                                 <div class="card-tag">
-                                <span class="badge rounded-pill">HTML5</span> 
-                                <span class="badge rounded-pill">CSS3</span>
-                                <span class="badge rounded-pill">Bootstrap 5</span> 
-                                <span class="badge rounded-pill">JavaScript</span> 
+                                   <span class="badge rounded-pill">HTML5</span> 
+                                   <span class="badge rounded-pill">CSS3</span>
+                                   <span class="badge rounded-pill">Bootstrap 5</span> 
+                                   <span class="badge rounded-pill">JavaScript</span> 
                                 </div>
                                 <div class="d-flex justify-content-end align-content-end align-items-end">
                                     <a href="#" class="card-link">
@@ -214,29 +300,43 @@
             </div>
         </section>
 
-        <!--Contact-->
-        <section id="fourth">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex align-items-center justify-content-center mb-2">
-                        <h1 class="section-title">Contact Me</h1> 
+        <!--Interests-->
+        <section id="interests">
+            <div class="container-md">
+                <h4 class="resume-title">▪&ensp;INTERESTS</h4>
+                <div class="I-wrap d-flex align-items-center justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-5 d-flex justify-content-center px-0">
+                            <div class="I-img">
+                                <a href="https://drive.google.com/file/d/1Ml9cgpMKXSKPqUPVV2iArYx9mkw2-rmz/view?usp=share_link" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/學生會幹部證明.jpg" alt="幹部證明" title="幹部證明">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-7 row I-right">
+                            <div class="col-12 I-text">
+                                <span class="d-flex justify-content-center">【學生會】美宣</span>
+                                <ul>
+                                    <li>於高中時期擔任學生會及畢聯會的美宣，具備設計及團隊合作能力。</li>
+                                    <li>期間也擔任過校慶紀念品的總召、應屆畢業紀念冊的總編輯及副召，具領導統籌、溝通協商、時間管理能力。</li>
+                                    <li>善於文宣設計、規劃與執行活動企劃。</li>
+                                </ul> 
+                            </div>
+                            <div class="col-12 align-content-end">
+                                <div class="d-flex justify-content-center">
+                                    <img src="images/I-reminder.png" width="150" alt="幹部網址提醒">
+                                </div>
+                                <div class="d-flex justify-content-end align-content-end align-items-end">
+                                    <a class="I-link" href="https://drive.google.com/file/d/1Ml9cgpMKXSKPqUPVV2iArYx9mkw2-rmz/view?usp=share_link" target="_blank" rel="noopener noreferrer">
+                                        <span>幹部經歷暨事蹟紀錄 ↗</span>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
-                    <div class="col-12 d-flex align-items-center justify-content-center mb-2">
-                        <span class="mail-title">EMAIL</span>
-                    </div>
-                    <div class="col-12 d-flex align-items-center justify-content-center mb-2">
-                        <a href="mailto: luya.chien@gmail" target="_blank" rel="noopener noreferrer" class="f-mail">
-                           <p class="mail">luya.chien@gmail.com</p> 
-                        </a>
-                    </div>
-                    <div class="c-btn-link col-12 d-flex align-items-center justify-content-center">
-                        <a class="c-btn" href="contact.html">
-                            <img src='images/ContactBtn.png' width='240' alt="ContactForm">
-                        </a>
-                    </div>
-                </div>    
+                </div>
             </div>
-            
         </section>
     </main>
     
@@ -247,7 +347,7 @@
             <div class="row">
                 <div class="col-sm-3 my-sm-0 text-muted text-start order-2 order-sm-1">
                     <a class="logo-link" href="index.html">
-                        <img src='images/CY-logo(Big).png' width='100' alt="NavLogo">
+                        <img src="images/CY-logo(Big).png" width="100" alt="NavLogo">
                     </a>
                 </div>
                 
@@ -285,6 +385,14 @@
     </p>
 
     <script src="JS/script.js"></script>
-    <script src="JS/i-script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.documentElement.classList.add('isLoad');
+
+            setTimeout(function() {
+                document.querySelector('.About-Text-wrap').classList.add('show');
+            }, 3000);
+        });
+    </script>
 </body>
 </html>
