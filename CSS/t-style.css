@@ -15,7 +15,7 @@
     position: absolute;
     height: 150px;
     width: 200px;
-    animation: close-envelope 1.8s forwards, shrink-move-envelope 2s 2s forwards;
+    animation: close-envelope 1.8s forwards, fade-down 2s 2s forwards;
 }
 .animated-mail .mail-body {
     position: absolute;
@@ -130,13 +130,13 @@
         z-index: 3;
     }
 }
-@keyframes shrink-move-envelope {
+@keyframes fade-down {
     0% {
-        transform: scale(1);
+        transform: translateY(0);
         opacity: 1;
     }
     100% {
-        transform: scale(2);
+        transform: translateY(50px);
         opacity: 0;
     }
 }

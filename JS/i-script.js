@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setTimeout(function() {
         document.querySelector('.GoToSecond').classList.add('show');
-    }, 3000);
+    }, 2000);
 });
 
 /*Show navbar after hovering banner*/
@@ -70,3 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
         navbar.style.opacity = ''; // Reset the opacity
     });
 });
+
+/*AOS*/
+AOS.init();

@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 2000);
 });
 
-
 /*HamburgerToggle*/
 document.getElementById('hamburgerToggle').addEventListener('click', function() {
     this.classList.toggle('open');
