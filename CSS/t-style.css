@@ -146,6 +146,28 @@
     opacity: 1;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#thx {
+    width: 100%;
+}
+
 @media screen and (hover: none) {
     main {
         display: flex;
@@ -168,6 +190,7 @@
     body {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
     }
     
     footer {
