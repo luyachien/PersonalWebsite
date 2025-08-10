@@ -435,6 +435,32 @@
     font-size: .9rem;
 }
 
+/*Certificate*/
+#certificate {
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+#certificate .L-wrap ul li{
+    margin-bottom: 12px;
+}
+.C-img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.C-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    transition: .5s ease;
+}
+.carousel-inner {
+    border-radius: 12px;
+}
+.carousel-caption h5, .carousel-caption p {
+    text-shadow: 2px 0px 4px rgba(0, 0, 0, 0.8);
+}
+
 /*Projects*/
 #projects .col-6 {
     margin-bottom: 16px;
